@@ -1,0 +1,167 @@
+/* ############## Google Fonts ############## */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+
+/* ############## start header ############## */
+header{
+   height: 32px;
+   background-color: #0872b9;
+}
+
+#welcomeArea{
+   line-height: 32px;
+   float: left;
+}
+
+#welcomeArea p{
+   letter-spacing: 1px;
+   font-size: 14px;
+   font-weight: 400;
+   font-family: 'Open Sans', sans-serif;
+   color: #e7e7e7;
+}
+
+/* icon */
+#socialArea{
+   line-height: 32px;
+   float: right;
+}
+#socialArea ul{
+   display: flex;
+}
+
+#socialArea ul li{
+   margin-left: 25px;
+}
+
+#socialArea a.icon-item{
+   font-size: 18px;
+   color: #fff;
+}
+
+a.icon-item i{
+   transition: all linear .5s;
+   -webkit-transition: all linear .5s;
+   -moz-transition: all linear .5s;
+   -ms-transition: all linear .5s;
+   -o-transition: all linear .5s;
+}
+
+a.icon-item i:hover{
+   color: #353535;
+   transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+}
+
+
+/* ############## start Navbar ############## */
+nav{
+   height: 80px;
+   background-color: #fff;
+   line-height: 80px;
+}
+
+#logoArea{
+   float: left;
+   margin-top: 12px;
+}
+
+#logoArea .logo{
+   width: 80px;
+}
+
+#menuArea{
+   float: right;
+}
+
+#menuArea ul{
+   display: flex;
+}
+
+#menuArea ul li{
+   text-transform: capitalize;
+   margin-left: 15px;
+}
+
+a.menu-item{
+   font-size: 14x;
+   font-weight: 500;
+   font-family: 'Open Sans', sans-serif;
+   color: #353535;
+}
+
+li a.menu-item:hover{
+   color: #0872b9;
+}
+
+
+
+/* ############## Start Banner section ############## */
+.bannerSection{
+   height: 400px;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Assets/banner.jpg) center no-repeat;
+   background-size: cover;
+   color: #fff;
+   font-family: 'Oswald', sans-serif;
+}
+
+.bannerText{
+   width: 50%;
+   float: right;
+   text-align: right;
+   padding-top: 60px;
+}
+
+.bannerText .title1{
+   font-size: 30px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-family: 'Oswald', sans-serif;
+}
+.bannerText .title2{
+   font-size: 40px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-family: 'Oswald', sans-serif;
+}
+.bannerText .subTitle{
+   font-family: 'Open sans', sans-serif;
+   font-size: 13px;
+   font-weight: 400;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.hireBtn,
+.contactBtn{
+   transition: all linear 0.3s;
+   -webkit-transition: all linear 0.3s;
+   -moz-transition: all linear 0.3s;
+   -ms-transition: all linear 0.3s;
+   -o-transition: all linear 0.3s;
+}
+
+.hireBtn:hover,
+.contactBtn:hover{
+   border-color: #0872b9;
+   background-color: #0872b9;
+}
+.contactBtn{
+   margin-left: 20px;
+}
+/* ############## End Banner section ############## */
+
+
+
+
+
+/* 
+
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Oswald', sans-serif;
+
+*/

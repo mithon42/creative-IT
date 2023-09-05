@@ -1,0 +1,43 @@
+/* ############## reset & common css ############## */
+*,
+*::before,
+*::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #fff;
+}
+
+.mainContainer{
+   width: 1020px;
+   margin: 0 auto;
+}
+
+.container{
+   width: 940px;
+   margin: 0 auto;
+}
+
+li{
+   list-style: none;
+}
+
+a{
+   text-decoration: none;
+}
+
+.btn{
+   border: 3px solid #fff;
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: 1px;
+   padding: 10px 20px;
+   background-color: transparent;
+   color: #fff;
+   cursor: pointer;
+}

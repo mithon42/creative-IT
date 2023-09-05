@@ -1,0 +1,113 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container{
+   width: 700px;
+   margin: 20px auto;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+}
+.list-container{
+   border: 4px solid tomato;
+   padding: 10px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   margin: 20px 0;
+}
+
+.title{
+   color: #fff;
+   background-color: cadetblue;
+   text-align: center;
+   padding: 5px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   letter-spacing: 0.04em;
+}
+
+/* Ordered List */
+ol{
+   list-style-type: decimal-leading-zero;
+   margin-top: 10px;
+   margin-left: 30px;
+}
+
+ol li{
+   margin: 10px;
+   color: green;
+}
+
+ol ol{
+   list-style-type: upper-alpha;
+}
+ol ol li{
+   color: red;
+}
+
+ol ol ol{
+   list-style-type: upper-roman;
+}
+ol ol ol li{
+   color: blue;
+}
+
+
+
+/* Unordered List */
+ul{
+   list-style-type: none;
+   margin-top: 10px;
+}
+
+ul li{
+   display: inline-block;
+   padding: 5px 10px;
+   margin-right: 15px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   cursor: pointer;
+   border: 1px solid cadetblue;
+}
+
+ul li:nth-child(odd){
+   color: black;
+   background-color: #fff;
+}
+ul li:nth-child(odd):hover{
+   color: #fff;
+   background-color: cadetblue;
+}
+
+ul li:nth-child(even){
+   color: #fff;
+   background-color: cadetblue;
+}
+ul li:nth-child(even):hover{
+   color: black;
+   background-color: transparent;
+}
+
+
+/* Description Lists */
+dt{
+   margin-top: 10px;
+   font-size: 20px;
+   margin-bottom: 5px;
+}
+dd{
+   color: #666;
+   line-height: 1.5;
+   font-size: 16px;
+}

@@ -1,0 +1,146 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+   width: 28rem;
+   margin: 1.5rem auto;
+   background-color: #fff;
+   box-shadow:  0.1rem 0.1rem 0.2rem #e86868, -0.1rem -0.1rem 0.2rem #e86868;
+}
+
+
+
+/* Start Logo & Title */
+.logo{
+   position: relative;
+   padding: 5px 0;
+   height: 45px;
+}
+
+.logo > img{
+   width: 110px;
+   position: absolute;
+   cursor: pointer;
+   top: -10px;
+   transition: transform 2s;
+   -webkit-transition: transform 2s;
+   -moz-transition: transform 2s;
+   -ms-transition: transform 2s;
+   -o-transition: transform 2s;
+}
+
+.logo img:hover{
+   transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   
+}
+
+.logo > h1{
+   text-align: center;
+   margin-left: 40px;
+   text-transform: uppercase;
+   font-size: 25px;
+   margin-top: 4px;
+   color: #e86868;
+}
+/* End Logo & Title */
+
+
+/* Start Student ID Card Image */
+.image{
+   text-align: center;
+   background-color: #287bc0;
+}
+
+.image > img{
+   width: 200px;
+   height: 200px;
+   margin-top: 10px;
+   margin-bottom: 2px;
+   border-radius: 50%;
+   cursor: pointer;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   border: 3px solid #e86868;
+   transition: transform 2s, cursor 2s;
+   -webkit-transition: transform 2s, cursor 2s;
+   -moz-transition: transform 2s, cursor 2s;
+   -ms-transition: transform 2s, cursor 2s;
+   -o-transition: transform 2s, cursor 2s;
+   
+}
+
+.image > img:hover {
+   transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+}
+/* End Student ID Card Image */
+
+
+h3{
+   color: #fff;
+   background-color: #f84848;
+   text-align: center;
+   padding: 5px 0;
+   letter-spacing: 1px;
+}
+
+/* Start Bio */
+.bio {
+   padding: 5px;
+   margin: 5px 0;
+   overflow: hidden;
+}
+
+.bio h4{
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 18px;
+   letter-spacing: 1px;
+   color: red;
+   position: relative;
+}
+
+.bio h4::before{
+   content: '';
+   width: 70px;
+   height: 2px;
+   background-color: #008cff;
+   position: absolute;
+   top: 100%;
+   left: 43%;
+}
+
+.bio .program {
+   margin-bottom: 5px;
+}
+
+.bio .program strong {
+   font-size: 17px;
+}
+
+.bio .left{
+   display: block;
+   width: 45%;
+   float: left;
+   padding: 5px 0;
+}
+
+.bio .right{
+   width: 55%;
+   float: right;
+   padding: 5px 0;
+}
+/* End Bio */

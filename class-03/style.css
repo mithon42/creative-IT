@@ -1,0 +1,253 @@
+/* ####################### Resect Code Start ####################### */
+*,
+*::after,
+*::before{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus{
+   outline: none;
+}
+/* ######################## Reset Code End ######################## */
+
+
+
+
+/* ##################### Common CSS Code Start ##################### */
+.container{
+   width: 500px;
+   margin: 10px auto;
+   padding: 10px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   box-shadow: 2px 2px 5px #e96430, -2px -2px 5px #e96430;
+}
+
+.btn{
+   padding: 8px 20px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   font-size: 16px;
+   background-color: #ddd;
+   cursor: pointer;
+   border: none;
+   line-height: 1.5;
+}
+
+.inputField{
+   padding: 5px 10px;
+   border: none;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   font-size: 16px;
+   line-height: 1.5;
+   margin: 1px 0;
+}
+/* ##################### Common CSS Code End ##################### */
+
+
+
+
+/* ############### Facebook Login Page Design Start ############### */
+.fbLoginForm{
+   width: 95%;
+   margin: 5px auto;
+   padding: 10px;
+   background-color: rgb(39, 135, 220);
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   box-shadow: 2px 2px 5px #ddd, -2px -2px 5px #ddd;
+   margin-bottom: 20px;
+}
+
+.fbLoginForm > h2{
+   color: #ffff;
+   text-align: center;
+   padding: 5px 0;
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.fbLoginForm > h2::before{
+   position: absolute;
+   content: '';
+   width: 150px;
+   height: 2px;
+   background: #ddd;
+   top: 90%;
+   left: 37%;
+}
+
+
+
+/* Start Gander */
+.gander{
+   color: #fff;
+   margin: 15px 0;
+}
+
+.gander p{
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.gander > input {
+   margin-right: 20px;
+}
+/* End Gander */
+
+
+
+/* Start Date Of Bath */
+.dateOfBath{
+   margin: 15px 0;
+}
+.dateOfBath p{
+   color: #fff;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.dateOfBath > select {
+   width: 100px;
+   padding: 5px;
+   font-size: 16px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+/* End Date Of Bath */
+
+
+
+/* Start Profile Type */
+.profileType{
+   color: #fff;
+   margin: 15px 0;
+}
+
+.profileType > p {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.profileType > input {
+   margin-right: 20px;
+}
+/* End Profile Type */
+
+
+/*  */
+.colorAndCalender{
+   margin-bottom: 15px;
+}
+.colorAndCalender > label {
+   color: #fff;
+   font-size: 18px;
+   font-weight: bold;
+}
+.colorAndCalender #color {
+   width: 100px;
+   border: 0;
+   margin: 0 15px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+.colorAndCalender > #date{
+   padding: 4px 10px;
+   border: 0;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   font-size: 16px;
+}
+/*  */
+
+/* Start Size */
+.size > input{
+   margin-right: 20px;
+}
+.size > p,
+.size > label{
+   color: #ffff;
+}
+.size > p {
+   font-size: 18px;
+   font-weight: bold;
+}
+/* End Size */
+
+
+
+/* Start Message Box */
+textarea{
+   width: 100%;
+   border: none;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   font-size: 16px;
+   line-height: 1.5;
+   padding: 5px 10px;
+   margin: 15px 0;
+}
+textarea:focus{
+   outline: none;
+}
+/* End Message Box */
+
+
+/* Start Submit Or Reset Button */
+.submitOrResetButton{
+   overflow: hidden;
+}
+.submit{
+   float: left;
+}
+.reset{
+   float: right;
+}
+/* End Submit Or Reset Button */
+/* ################# Facebook Login Page Design End ################# */
+
+
+
+
+/* ########################## Start Table ########################## */
+.table{
+   margin: 15px 0;
+}
+.table > table th{
+   background-color: #ddd;
+}
+
+.table > table th,
+.table > table td{
+   padding: 5px 10px;
+}
+/* ########################### End Table ########################### */
