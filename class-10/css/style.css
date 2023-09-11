@@ -1,0 +1,504 @@
+/* ############## Google Fonts ############## */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+
+/* ############## start header ############## */
+#header{
+   height: 32px;
+   background-color: #0872b9;
+}
+
+#welcomeArea{
+   line-height: 32px;
+   float: left;
+}
+
+#welcomeArea p{
+   letter-spacing: 1px;
+   font-size: 14px;
+   font-weight: 400;
+   font-family: 'Open Sans', sans-serif;
+   color: #e7e7e7;
+}
+
+/* icon */
+#socialArea{
+   line-height: 32px;
+   float: right;
+}
+#socialArea ul{
+   display: flex;
+}
+
+#socialArea ul li{
+   margin-left: 25px;
+}
+
+#socialArea a.icon-item{
+   font-size: 18px;
+   color: #fff;
+}
+
+a.icon-item i{
+   transition: all linear .5s;
+   -webkit-transition: all linear .5s;
+   -moz-transition: all linear .5s;
+   -ms-transition: all linear .5s;
+   -o-transition: all linear .5s;
+}
+
+a.icon-item i:hover{
+   color: #353535;
+   transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+}
+
+
+/* ############## start Navbar ############## */
+#navbar{
+   height: 80px;
+   background-color: #fff;
+   line-height: 80px;
+}
+
+#logoArea{
+   float: left;
+   margin-top: 12px;
+}
+
+#logoArea .logo{
+   width: 80px;
+}
+
+#menuArea{
+   float: right;
+}
+
+#menuArea ul{
+   display: flex;
+}
+
+#menuArea ul li{
+   text-transform: capitalize;
+   margin-left: 15px;
+}
+
+a.menu-item{
+   font-size: 14x;
+   font-weight: 500;
+   font-family: 'Open Sans', sans-serif;
+   color: #353535;
+}
+
+li a.menu-item:hover{
+   color: #0872b9;
+}
+
+
+
+/* ############## Start Banner section ############## */
+#bannerSection{
+   height: 400px;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Assets/images/banner.jpg) center no-repeat;
+   background-size: cover;
+   color: #fff;
+   font-family: 'Oswald', sans-serif;
+}
+.bannerText{
+   width: 50%;
+   float: right;
+   text-align: right;
+   padding-top: 60px;
+}
+
+.bannerText .title1{
+   font-size: 30px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-family: 'Oswald', sans-serif;
+}
+.bannerText .title2{
+   font-size: 40px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-family: 'Oswald', sans-serif;
+}
+.bannerText .subTitle{
+   font-family: 'Open sans', sans-serif;
+   font-size: 13px;
+   font-weight: 400;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.hireBtn,
+.contactBtn{
+   transition: all linear 0.3s;
+   -webkit-transition: all linear 0.3s;
+   -moz-transition: all linear 0.3s;
+   -ms-transition: all linear 0.3s;
+   -o-transition: all linear 0.3s;
+}
+
+.hireBtn:hover,
+.contactBtn:hover{
+   border-color: #0872b9;
+   background-color: #0872b9;
+}
+.contactBtn{
+   margin-left: 20px;
+}
+/* ############## End Banner section ############## */
+
+
+/* ############## Start About section ############## */
+#aboutSection .aboutContact{
+   display: flex;
+}
+
+.aboutContact .aboutImageArea{
+   width: 40%;
+}
+
+.aboutImageArea > img{
+   width: 380px;
+   height: 100%;
+}
+
+.aboutContact .aboutDescriptionArea{
+   width: 60%;
+   margin: 40px 0 40px 20px;
+}
+
+.aboutDescriptionArea .descriptionItem{
+   letter-spacing: 1px;
+   line-height: 1.5;
+   font-size: 13px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   color: #555;
+   text-align: justify;
+}
+.descriptionItem span{
+   display: block;
+   margin-top: 40px;
+}
+/* ############## End About section ############## */
+
+
+/* ############## Start Services section ############## */
+.servicesCardArea{
+   padding-top: 30px;
+   height: 200px;
+}
+
+.card{
+   width: 300px;
+   height: 170px;
+   background-color: #f1f1f1;
+   float: left;
+   text-align: center;
+   transition: box-shadow linear 0.3s;
+   -webkit-transition: box-shadow linear 0.3s;
+   -moz-transition: box-shadow linear 0.3s;
+   -ms-transition: box-shadow linear 0.3s;
+   -o-transition: box-shadow linear 0.3s;
+   position: relative;
+}
+
+.card:nth-child(2){
+   margin: 0 30px;
+}
+
+.card:hover{
+   box-shadow: 2px 2px 5px #c6c6c6, -2px -2px 5px #c6c6c6;
+}
+
+.cardHeader{
+   width: 80px;
+   height: 80px;
+   background-color: #f1f1f1;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+.cardIconGreenBorder{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   border: 3px solid #0872b9;
+}
+
+.cardWhiteBorder{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   border: 3px solid #f1f1f1;
+   cursor: pointer;
+   position: relative;
+   transition: background-color linear 0.3s;
+   -webkit-transition: background-color linear 0.3s;
+   -moz-transition: background-color linear 0.3s;
+   -ms-transition: background-color linear 0.3s;
+   -o-transition: background-color linear 0.3s;
+}
+
+.cardWhiteBorder:hover{
+   background-color: #0872b9;
+}
+
+.cardIcon{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+.cardBody{
+   margin-top: 50px;
+   padding: 0 5px;
+}
+
+.cardTitle{
+   color: #353535;
+   font-size: 16px;
+   font-weight: 500;
+   font-family: 'Oswald', sans-serif;
+   margin-bottom: 15px;
+   letter-spacing: 1px;
+}
+
+.cardDescription{
+   font-size: 13px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   line-height: 1.5;
+}
+/* ############## End Services section ############## */
+
+
+/* ############## Start Portfolio section ############## */
+.portfolioItems{
+   display: flex;
+}
+.portfolioItem{
+   position: relative;
+   margin: 0 10px;
+}
+.portfolioItem:first-child{
+   margin-left: 0;
+}
+.portfolioItem:last-child{
+   margin-right: 0;
+}
+.portfolioItem:nth-child(even){
+   height: 300px;
+}
+.portfolioItem:nth-child(odd){
+   height: 220px;
+}
+.portfolioItemOverBg{
+   width: 0;
+   height: 0;
+   background-color: rgba(96, 96, 96, 0.7);
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+.portfolioItem:hover .portfolioItemOverBg{
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+}
+.portfolioItemLink{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   font-size: 30px;
+   color: #fff;
+}
+
+/* ############## End Portfolio section ############## */
+
+
+/* ############## Start OUR TEAM section ############## */
+.teamItems{
+   margin-bottom: 20px;
+   display: flex;
+}
+.teamItems .teamItem{
+   width: 25%;
+   height: 270px;
+   margin: 0 10px;
+   position: relative;
+}
+.teamItems .teamItem:hover{
+   box-shadow: 2px 2px 8px #d6d6d6, -2px -2px 8px #d6d6d6;
+}
+.teamItems .teamItem:first-child{
+   margin-left: 0;
+}
+.teamItems .teamItem:last-child{
+   margin-right: 0;
+}
+
+.teamItem img{
+   width: 100%;
+   height: 100%;
+}
+.teamOverBg{
+   width: 0;
+   height: 100%;
+   background: rgba(96, 96, 96, 0.7);
+   position: absolute;
+   top: 0;
+   right: 0;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+   opacity: 0;
+}
+.teamItem:hover .teamOverBg{
+   width: 80px;
+   opacity: 1;
+}
+
+.teamOverBg ul{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+.teamOverBg ul li{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   margin: 15px 20px;
+   border: 2px solid #fff;
+   cursor: pointer;
+   position: relative;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+.teamItem li:first-child{
+   margin-top: 0;
+}
+.teamItem li:last-child{
+   margin-bottom: 0;
+}
+.teamItem li:hover{
+   background-color: #5bc5f4;
+   transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+}
+.teamOverBg li a.teamLink{
+   color: #fff;
+   font-size: 18px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+.teamItem .teamMemberInfo{
+   text-align: center;
+}
+.teamMemberInfo .teamMemberTitle{
+   text-transform: uppercase;
+   font-family: 'Oswald', sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   transition: 0.3s;
+   -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -ms-transition: 0.3s;
+   -o-transition: 0.3s;
+   color: #353535;
+}
+.teamMemberInfo .teamMemberSubTitle{
+   font-size: 14px;
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: 1px;
+   text-transform: capitalize;
+   color: #555;
+}
+.teamItem:hover .teamMemberTitle{
+   color: #5bc5f4;
+}
+/* ############## End OUR TEAM section ############## */
+
+
+/* ############## Start Testimonial section ############## */
+
+
+
+
+
+
+/* 
+
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Oswald', sans-serif;
+
+*/
