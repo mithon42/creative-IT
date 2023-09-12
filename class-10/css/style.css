@@ -61,30 +61,32 @@ a.icon-item i:hover{
 /* ############## start Navbar ############## */
 #navbar{
    height: 80px;
-   background-color: #fff;
    line-height: 80px;
 }
 
 #logoArea{
+   width: 25%;
    float: left;
-   margin-top: 12px;
 }
 
 #logoArea .logo{
    width: 80px;
+   line-height: 80px;
 }
 
 #menuArea{
-   float: right;
+   width: 75%;
+   float: left;
 }
 
 #menuArea ul{
-   display: flex;
+   float: right;
 }
 
 #menuArea ul li{
    text-transform: capitalize;
    margin-left: 15px;
+   float: left;
 }
 
 a.menu-item{
@@ -97,7 +99,6 @@ a.menu-item{
 li a.menu-item:hover{
    color: #0872b9;
 }
-
 
 
 /* ############## Start Banner section ############## */
@@ -120,12 +121,14 @@ li a.menu-item:hover{
    font-weight: 400;
    letter-spacing: 1px;
    font-family: 'Oswald', sans-serif;
+   text-transform: uppercase;
 }
 .bannerText .title2{
    font-size: 40px;
-   font-weight: 400;
+   font-weight: bold;
    letter-spacing: 1px;
    font-family: 'Oswald', sans-serif;
+   text-transform: uppercase;
 }
 .bannerText .subTitle{
    font-family: 'Open sans', sans-serif;
@@ -135,8 +138,11 @@ li a.menu-item:hover{
    margin-bottom: 30px;
 }
 
+
 .hireBtn,
 .contactBtn{
+   width: 80px;
+   height: 30px;
    transition: all linear 0.3s;
    -webkit-transition: all linear 0.3s;
    -moz-transition: all linear 0.3s;
@@ -194,142 +200,118 @@ li a.menu-item:hover{
 .servicesCardArea{
    padding-top: 30px;
    height: 200px;
+   display: flex;
 }
 
 .card{
-   width: 300px;
-   height: 170px;
+   height: 165px;
    background-color: #f1f1f1;
-   float: left;
    text-align: center;
-   transition: box-shadow linear 0.3s;
-   -webkit-transition: box-shadow linear 0.3s;
-   -moz-transition: box-shadow linear 0.3s;
-   -ms-transition: box-shadow linear 0.3s;
-   -o-transition: box-shadow linear 0.3s;
+   padding: 50px 20px 20px 20px;
    position: relative;
-}
-
-.card:nth-child(2){
-   margin: 0 30px;
-}
-
-.card:hover{
-   box-shadow: 2px 2px 5px #c6c6c6, -2px -2px 5px #c6c6c6;
-}
-
-.cardHeader{
-   width: 80px;
-   height: 80px;
-   background-color: #f1f1f1;
-   border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-   position: absolute;
-   top: 0;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   -webkit-transform: translate(-50%, -50%);
-   -moz-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   -o-transform: translate(-50%, -50%);
-}
-
-.cardIconGreenBorder{
-   width: 100%;
-   height: 100%;
-   border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-   border: 3px solid #0872b9;
-}
-
-.cardWhiteBorder{
-   width: 100%;
-   height: 100%;
-   border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-   border: 3px solid #f1f1f1;
+   float: left;
+   margin-right: 20px;
    cursor: pointer;
-   position: relative;
-   transition: background-color linear 0.3s;
-   -webkit-transition: background-color linear 0.3s;
-   -moz-transition: background-color linear 0.3s;
-   -ms-transition: background-color linear 0.3s;
-   -o-transition: background-color linear 0.3s;
-}
-
-.cardWhiteBorder:hover{
-   background-color: #0872b9;
+   transition: .3s;
+   -webkit-transition: .3s;
+   -moz-transition: .3s;
+   -ms-transition: .3s;
+   -o-transition: .3s;
 }
 
 .cardIcon{
-   width: 50px;
-   height: 50px;
+   width: 70px;
+   height: 70px;
+   background-color: #f1f1f1;
+   border-radius: 50%;
    position: absolute;
-   top: 50%;
+   top: -35px;
    left: 50%;
-   transform: translate(-50%, -50%);
-   -webkit-transform: translate(-50%, -50%);
-   -moz-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   -o-transform: translate(-50%, -50%);
+   transform: translateX(-50%);
+   border: 2px solid #272424;
+   transition: .3s;
 }
 
-.cardBody{
-   margin-top: 50px;
-   padding: 0 5px;
+.cardIcon::after{
+   content: '';
+   width: 72px;
+   height: 72px;
+   position: absolute;
+   top: -3px;
+   left: -3px;
+   border-radius: 50%;
+   border: 3px solid #f1f1f1;
+   transition: .3s;
+}
+.cardIcon::before{
+   content: '';
+   width: 74px;
+   height: 74px;
+   position: absolute;
+   top: -4px;
+   left: -4px;
+   border-radius: 50%;
+   border: 4px solid #fff;
 }
 
-.cardTitle{
-   color: #353535;
+.cardIcon .icon{
+   width: 32px;
+   line-height: 70px;
+   margin: 0 auto;
+}
+
+.card:nth-child(3){
+   margin-right: 0;
+}
+
+.card:hover{
+   box-shadow: #00000059 0px 0px 6px 1px;
+}
+
+.card:hover .cardIcon{
+   background-color: #5bc5f4;
+}
+.card:hover .cardIcon::after{
+   border-color: #5bc5f4;
+}
+
+.card h2{
    font-size: 16px;
    font-weight: 500;
+   color: #353535;
    font-family: 'Oswald', sans-serif;
-   margin-bottom: 15px;
-   letter-spacing: 1px;
 }
-
-.cardDescription{
+.card p{
    font-size: 13px;
-   font-family: 'Open Sans', sans-serif;
    font-weight: 400;
-   line-height: 1.5;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 24px;
 }
 /* ############## End Services section ############## */
 
 
 /* ############## Start Portfolio section ############## */
-.portfolioItems{
+.portfolioItemsRow{
+   margin-top: 30px;
    display: flex;
+}
+.portfolioItemsCol{
+   float: left;
+   margin-right: 20px;
+}
+.portfolioItemsCol:last-child{
+   margin-right: 0;
 }
 .portfolioItem{
    position: relative;
-   margin: 0 10px;
 }
 .portfolioItem:first-child{
-   margin-left: 0;
+   margin-bottom: 20px;
 }
-.portfolioItem:last-child{
-   margin-right: 0;
-}
-.portfolioItem:nth-child(even){
-   height: 300px;
-}
-.portfolioItem:nth-child(odd){
-   height: 220px;
-}
-.portfolioItemOverBg{
-   width: 0;
+.portfolioItemOverly{
+   background-color: rgba(0, 0, 0, 0.6);
    height: 0;
-   background-color: rgba(96, 96, 96, 0.7);
+   width: 0;
    position: absolute;
    top: 0;
    left: 0;
@@ -340,22 +322,23 @@ li a.menu-item:hover{
    -ms-transition: 0.5s;
    -o-transition: 0.5s;
 }
-.portfolioItem:hover .portfolioItemOverBg{
+.portfolioItem:hover .portfolioItemOverly{
    width: 100%;
    height: 100%;
    opacity: 1;
 }
-.portfolioItemLink{
+.portfolioItemOverly a{
+   width: 40px;
+   height: 40px;
+   background-color: #5bc5f4;
+   border-radius: 50%;
+   color: #fff;
+   text-align: center;
+   line-height: 40px;
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   -webkit-transform: translate(-50%, -50%);
-   -moz-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   -o-transform: translate(-50%, -50%);
-   font-size: 30px;
-   color: #fff;
 }
 
 /* ############## End Portfolio section ############## */

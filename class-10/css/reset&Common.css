@@ -20,6 +20,10 @@ body{
    margin: 0 auto;
 }
 
+.clr{
+   clear: both;
+}
+
 ul,
 ol{
    list-style: none;
@@ -32,23 +36,23 @@ a{
 img{
    width: 100%;
    max-width: 100%;
+   vertical-align: middle;
 }
 
 .btn{
-   border: 3px solid #fff;
+   border: 1px solid #fff;
    font-size: 14px;
    font-weight: 400;
    text-transform: uppercase;
    font-family: 'Oswald', sans-serif;
    letter-spacing: 1px;
-   padding: 10px 20px;
    background-color: transparent;
    color: #fff;
    cursor: pointer;
 }
 
 .section{
-   margin-top: 60px;
+   margin-top: 50px;
 }
 
 h2.sectionTitle{
