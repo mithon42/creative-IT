@@ -1,45 +1,45 @@
 /* ############## reset & common css ############## */
 *,
 *::before,
-*::after{
+*::after {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
-html{
+html {
    scroll-behavior: smooth;
 }
 
-body{
+body {
    background-color: #fff;
 }
 
-.container{
+.container {
    width: 960px;
    margin: 0 auto;
 }
 
-.clr{
+.clr {
    clear: both;
 }
 
 ul,
-ol{
+ol {
    list-style: none;
 }
 
-a{
+a {
    text-decoration: none;
 }
 
-img{
+img {
    width: 100%;
    max-width: 100%;
    vertical-align: middle;
 }
 
-.btn{
+.btn {
    border: 1px solid #fff;
    font-size: 14px;
    font-weight: 400;
@@ -51,21 +51,22 @@ img{
    cursor: pointer;
 }
 
-.section{
+.section {
    padding-top: 50px;
 }
 
-.sectionTitle{
-  font-size: 24px;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 35px;
-  position: relative;
+.sectionTitle {
+   font-size: 24px;
+   font-weight: 500;
+   text-transform: uppercase;
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 35px;
+   position: relative;
 }
-.sectionTitle::before{
+
+.sectionTitle::before {
    content: '';
    width: 60px;
    height: 2px;
@@ -73,4 +74,3 @@ img{
    position: absolute;
    top: 100%;
 }
-
