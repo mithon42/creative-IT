@@ -1,0 +1,266 @@
+/* ################ RESET STYLE START ################# */
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ################ RESET STYLE ENDS ################# */
+
+/* ################## START STYLE ################## */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 40px;
+}
+
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 20px;
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  background-color: #fff;
+  /* cursor: e-resize; */
+}
+
+.imageContent,
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.imageContent {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 25px;
+  -webkit-border-radius: 25px 25px 0 25px;
+  -moz-border-radius: 25px 25px 0 25px;
+  -ms-border-radius: 25px 25px 0 25px;
+  -o-border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after {
+  content: "";
+  right: 0;
+  bottom: -40px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #4070f4;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  -webkit-border-radius: 0 25px 0 0;
+  -moz-border-radius: 0 25px 0 0;
+  -ms-border-radius: 0 25px 0 0;
+  -o-border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+
+.cardImage {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 3px;
+  background: #fff;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+}
+
+.cardContent {
+  margin-top: 5px;
+}
+
+.cardContent .name {
+  font-size: 18px;
+  font-weight: 500;
+  columns: #333;
+}
+.cardContent .description {
+  font-size: 13px;
+  color: #707070;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.btn {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: background linear 0.3;
+  -webkit-transition: background linear 0.3;
+  -moz-transition: background linear 0.3;
+  -ms-transition: background linear 0.3;
+  -o-transition: background linear 0.3;
+}
+.btn:hover {
+  background: #265df2;
+}
+
+/* ##################### LEFT / RIGHT ARROW #################### */
+
+.sliderContent {
+  position: relative;
+}
+
+.sliderContent i {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #265df2;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 1;
+}
+.sliderContent i:hover {
+  color: tomato;
+  cursor: pointer;
+}
+.sliderContent .fa-angle-left {
+  left: -36px;
+}
+.sliderContent .fa-angle-right {
+  right: -36px;
+}
+
+/* ##################### DOT ARROW #################### */
+.dot {
+  margin-top: 10px;
+}
+.dotItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.dotItem {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+.dotItem:hover {
+  background: tomato;
+}
+.dotItemActive {
+  background-color: #265df2;
+}
+
+
+/* ################## Javascript Class Added ################ */
+.carousel.dragging {
+  scroll-behavior: auto;
+}
+.carousel.dragging .card{
+  user-select: none;
+  cursor: grab;
+}
+
+/* ####################### Responsive ####################### */
+@media screen and (max-width: 900px) {
+  .carousel {
+    grid-auto-columns: calc((100% / 2) - 10px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    grid-auto-columns: 100%;
+  }
+}

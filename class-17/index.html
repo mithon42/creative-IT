@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./img/fab.png" type="image/x-icon">
+   <title>Facebook - Sign Up | Mithon</title>
+   <!-- Font-Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <!-- css file -->
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+   <div class="container" id="container">
+      <div class="signUpTitle">
+         <div class="mainTitle">
+            <h2 class="title">Sign up</h2>
+            <p class="subTitle">It's quick and easy.</p>
+         </div>
+         <button class="close" id="close">
+            <i class="fa-solid fa-xmark"></i>
+         </button>
+      </div>
+
+      <form action="#" method="post" class="signUpForm">
+         <div class="nameEmailPassword">
+            <input type="text" placeholder="First name" class="firstName" id="firstName">
+            <input type="text" placeholder="Surname" class="surName" id="surName">
+            <input type="email" placeholder="Email address" class="email" id="email">
+            <input type="password" placeholder="New password" class="password" id="password">
+         </div>
+
+         <div class="dateOfBirth">
+            <p class="dateOfBirthTitle">Date of birth ?</p>
+            <div class="flex">
+               <select class="date">
+                  <option>Date</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+               </select>
+               <select class="month">
+                  <option>Month</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+               </select>
+               <select class="year">
+                  <option>Year</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+               </select>
+            </div>
+         </div>
+
+         <div class="gender">
+            <p class="genderTitle">Gander ?</p>
+            <div class="flex">
+               <div class="ganderInputBox">
+                  <label for="female">Female</label>
+                  <input type="radio" name="gander" id="female">
+               </div>
+               <div class="ganderInputBox">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gander" id="male">
+               </div>
+               <div class="ganderInputBox">
+                  <label for="custom">Custom</label>
+                  <input type="radio" name="gander" id="custom">
+               </div>
+            </div>
+         </div>
+
+         <div class="termsCondition">
+            <p>People who use our service may have uploaded your contact information to Facebook. <span class="link">Learn more</span></p>
+
+            <p>By clicking Sign Up, you agree to our <span class="link">Terms, Privacy Policy</span> and <span class="link">Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.</p>
+         </div>
+
+         <div class="btn">
+            <button type="submit" class="submitBtn" id="submitBtn">Sign Up</button>
+         </div>
+      </form>
+   </div>
+
+
+
+   <!-- js file -->
+   <script src="./js/app.js"></script>
+</body>
+</html>
