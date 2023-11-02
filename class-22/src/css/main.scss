@@ -1,0 +1,51 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+section{
+  padding-top: 135px;
+}
+
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/banner.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 122px;
+}
+
+.des {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.icon-mini-size {
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.section-des {
+  width: 692px;
+}
+
+.tours-icon{
+  width: fit-content;
+}
+
+.destination-card{
+  width: 310px;
+}
+
+#pages{
+  background: rgba(30, 30, 30, 0.05);
+}
