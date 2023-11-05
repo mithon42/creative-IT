@@ -35,12 +35,28 @@ body {
   text-transform: uppercase;
 }
 
+.section-title {
+  color: var(--blackColor);
+  font-family: var(--poppinsFont);
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
 
+.section-description {
+  color: var(--blackColor);
+  font-family: var(--poppinsFont);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+}
 /* ================= Header / Navbar =============== */
 header {
   height: 8rem;
   width: 100%;
   background: transparent;
+  /* background: rgba(0, 0, 0, 0.8); */
   position: fixed;
   z-index: 999;
 }
@@ -269,20 +285,6 @@ section#about {
   padding-bottom: 13rem;
 }
 
-
-.about-title{
-  color: var(--blackColor);
-  font-family: var(--poppinsFont);
-  font-size: 4.8rem;
-  font-weight: 600;
-}
-.about-description{
-  color: var(--blackColor);
-  font-family: var(--poppinsFont);
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-
 .consultation-btn {
   width: 20rem;
   background: var(--btnBgColor);
@@ -306,8 +308,36 @@ section#about {
   font-size: 1.8rem;
   font-weight: 400;
 }
-
 /* ================= About Section Ends =============== */
+
+/* ================= Services Section Start =============== */
+section#services{
+  padding: 13rem 0;
+}
+
+#services .service-circle{
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 0.2rem solid var(--primaryColor);
+}
+
+.service-circle .dot-circle{
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: var(--btnBgColor);
+}
+
+/* ================= Services Section Ends =============== */
 
 
 
@@ -316,25 +346,90 @@ section#about {
 
 
 /* ================= Footer Start =============== */
-#footer .copyright{
+#footer {
   background: var(--blackColor);
 }
 
-.copyright p{
+#footer .footer-content {
+  padding-top: 11rem;
+  padding-bottom: 6rem;
+}
+
+.footer-content a.footer-logo{
+  width: fit-content;
+}
+
+.footer-content a.footer-logo img{
+  width: 8rem;
+}
+
+.footer-content .footer-title {
+  color: var(--primaryColor);
+  font-family: var(--poppinsFont);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer-content .build-modern,
+.footer-content .subscribe-newsletter,
+.footer-content .footer-link {
   color: var(--whiteColor);
+  font-family: var(--poppinsFont);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.footer-content .footer-icon-item{
+  background: #EEEEEE;
+}
+
+.footer-icon-item a{
+  font-size: 1.6rem;
+  color: #2B3044;
+}
+
+.footer-icon-item a:hover{
+  color: var(--primaryColor);
+}
+
+.footer-input-field{
   font-size: 1.2rem;
+  font-family: var(--poppinsFont);
+}
+
+.footer-input-btn{
+  font-size: 1.6rem;
+  color: var(--whiteColor);
+  background: var(--btnBgColor);
+}
+
+.footer-input-btn:hover{
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+}
+
+/* copyright */
+#footer .copyright {
+  background: var(--blackColor);
+  border-top: 0.2rem solid rgba(209, 209, 209, 0.2);
+}
+
+.copyright p {
+  color: var(--whiteColor);
+  font-size: 1.3rem;
   letter-spacing: 0.1rem;
   opacity: 0.7;
 }
 
-.copyright p a{
+.copyright p a {
   color: var(--primaryColor);
   text-decoration: none;
 }
 
-.copyright p a:hover{
+.copyright p a:hover {
   opacity: 0.5;
 }
+
 /* ================= Footer Ends =============== */
 
 
@@ -375,4 +470,5 @@ section#about {
     -o-transform: rotate(360deg);
   }
 }
+
 /* ================= Keyframes Ends =============== */

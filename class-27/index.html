@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <!-- ================== Header / Navbar Start =================== -->
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -35,10 +36,10 @@
               <a class="nav-link text-capitalize" href="#home">home</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link text-capitalize" href="#">about</a>
+              <a class="nav-link text-capitalize" href="#about">about</a>
             </li>
             <li class="nav-item px-4 dropdown">
-              <a class="nav-link dropdown-toggle text-capitalize" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle text-capitalize" href="#services" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">services</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item text-capitalize py-2" href="#">services one</a></li>
@@ -56,7 +57,7 @@
               </ul>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link text-capitalize" href="#">news</a>
+              <a class="nav-link text-capitalize" href="#news">news</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -82,7 +83,8 @@
               <h1 class="banner-main-title text-capitalize">We Provide Premium Consulting Service For your Business</h1>
               <p class="btnner-description text-capitalize">The Premium Consulting Service provides a faster way to
                 process plans, register dealings and create titles.</p>
-              <button class="btn common-btn get-started-btn py-3" title="please get started now">get started now</button>
+              <button class="btn common-btn get-started-btn py-3" title="please get started now">get started
+                now</button>
               <p class="sign-in-text">
                 <span>Already member of our communty?</span>
                 <a href="#">Sign in</a>
@@ -136,8 +138,9 @@
           <div class="col-6">
             <div class="about-content d-flex flex-column gap-5">
               <h2 class="section-header">about us</h2>
-              <h3 class="about-title text-capitalize">Welcome to World Best Business Company</h3>
-              <p class="about-description text-capitalize">We partner with experienced and qualified Accountants, Financial Advisors and Chartered Secretaries to provide</p>
+              <h3 class="section-title">Welcome to World Best Business Company</h3>
+              <p class="section-description">We partner with experienced and qualified Accountants,
+                Financial Advisors and Chartered Secretaries to provide</p>
               <ul class="d-flex flex-column gap-4">
                 <li class="d-flex align-items-center gap-3">
                   <span class="list-icon p-2 rounded-5"><i class="fa fa-check"></i></span>
@@ -159,37 +162,129 @@
       </div>
     </section>
     <!-- ================== About Section Ends =================== -->
+
+    <!-- ================== Services Section Ends =================== -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex flex-column gap-3">
+              <h2 class="section-header">services</h2>
+              <h3 class="section-title text-capitalize">Find the service we provide</h3>
+            </div>
+          </div>
+          <div class="col-6">
+            <p class="section-description">Our consultants have years of experience on the  in success. Through the provision of our services.</p>
+          </div>
+        </div>
+        <!-- slider -->
+        <div class="row">
+          <div class="col-3">
+            <div class="bg-secondary">
+              <div class="service-circle">
+                <span class="dot-circle"></span>
+                <div class="">
+                  <img src="./images/services-icon-1.png" alt="services-icon-1" />
+                </div>
+              </div>
+              <h5>Grow Your Brand And Business</h5>
+              <p>That community can of course lend to sales - that's how brand and business go hand-in-hand</p>
+            </div>
+          </div>
+          <div class="col-3"></div>
+          <div class="col-3"></div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Services Section Ends =================== -->
   </main>
 
 
   <!-- ======================= Footer Start ======================= -->
   <footer id="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="div">
-            somthing
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-3">
+            <div class="d-flex flex-column gap-4">
+              <a href="#home" class="footer-logo">
+                <img src="./images/logo.png" alt="footer-logo">
+              </a>
+              <p class="build-modern">Build a modern and creative <br> website with Innovate.</p>
+              <div class="d-flex gap-2">
+                <div class="footer-icon-item p-3 rounded-5">
+                  <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+                <div class="footer-icon-item p-3 rounded-5">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="footer-icon-item p-3 rounded-5">
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="footer-icon-item p-3 rounded-5">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="div">
-            somthing
+          <div class="col-2">
+            <div class="d-flex flex-column gap-4">
+              <h4 class="footer-title text-capitalize">products</h4>
+              <ul class="d-flex flex-column gap-3">
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Landingpages</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Pricing</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Benefits</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Features</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="div">
-            somthing
+          <div class="col-2">
+            <div class="d-flex flex-column gap-4">
+              <h4 class="footer-title text-capitalize">Company</h4>
+              <ul class="d-flex flex-column gap-3">
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">About</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Privacy Policy</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Terms & Conditions</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Partners</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="d-flex flex-column gap-4">
+              <h4 class="footer-title text-capitalize">Resources</h4>
+              <ul class="d-flex flex-column gap-3">
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Guides and resources</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Blog</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Tools</a></li>
+                <li><a href="#" class="footer-link text-capitalize text-decoration-none">Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="d-flex flex-column gap-4">
+              <h4 class="footer-title text-capitalize">Get Latest Updates</h4>
+              <p class="subscribe-newsletter">Subscribe to our newsletter and get many interesting things every week</p>
+              <div class="input-group bg-white rounded-3">
+                <input type="text" class="form-control py-3 footer-input-field" placeholder="Your Email Address" />
+                <button class="btn footer-input-btn px-3" type="button">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="copyright">
-      <p class="text-center py-2 py-md-3 text-capitalize">
-        <span>&copy; copyright design by</span>
-        <span class="text-secondary">|</span>
-        <a href="#" title="facebook profile visited" class="text-uppercase">mithon</a>
-      </p>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p class="py-2 py-md-4 text-capitalize">
+          <span>&copy; 2024 Innovate - All Right Reserved By</span>
+          <span class="text-secondary">|</span>
+          <a href="#" title="facebook profile visited" target="_blank" class="text-uppercase">mithon</a>
+        </p>
+      </div>
     </div>
   </footer>
   <!-- ======================= Footer Ends ======================= -->
